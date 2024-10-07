@@ -1,0 +1,11 @@
+<div class="register-container">
+    <div class="register-form">
+        <img src="https://mz14.uartes.edu.ec/wp-content/uploads/sites/11/2020/09/1-3.jpg" alt="Library Logo" class="logo">
+        <h2>Registro de Usuario</h2>
+        <form (ngSubmit)="register(username.value, password.value)">
+            <input type="text" #username placeholder="Username" required />
+            <input type="password" #password placeholder="Password" required />
+            <button type="submit">Registrar</button>
+        </form>
+    </div>
+</div>

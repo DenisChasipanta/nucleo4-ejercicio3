@@ -1,0 +1,53 @@
+<div class="container">
+    <h2 class="title">Gestión de Libros</h2>
+    
+    <div class="add-book-section">
+      <h3>Añadir Libro</h3>
+      <form (ngSubmit)="addLibro()" class="add-book-form">
+        <div class="form-group">
+          <label for="autor">Autor:</label>
+          <input type="text" id="autor" [(ngModel)]="nuevoLibro.autor" name="autor" placeholder="Autor" required />
+        </div>
+        <div class="form-group">
+          <label for="libro">Título del Libro:</label>
+          <input type="text" id="libro" [(ngModel)]="nuevoLibro.libro" name="libro" placeholder="Título del Libro" required />
+        </div>
+        <div class="form-group">
+          <label for="anio">Año de Publicación:</label>
+          <input type="number" id="anio" [(ngModel)]="nuevoLibro.anio" name="anio" placeholder="Año de Publicación" required />
+        </div>
+        <div class="form-group">
+          <label for="imagen">URL de la Imagen:</label>
+          <input type="text" id="imagen" [(ngModel)]="nuevoLibro.imagen" name="imagen" placeholder="URL de la Imagen" required />
+        </div>
+        <button type="submit" class="btn btn-primary">Agregar Libro</button>
+      </form>
+    </div>
+  
+    <div class="book-list-section">
+      <h3>Lista de Libros</h3>
+      <table class="book-table">
+        <thead>
+          <tr>
+            <th>Autor</th>
+            <th>Título</th>
+            <th>Año de Publicación</th>
+            <th>Imagen</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let libro of libros">
+            <td>{{ libro.autor }}</td>
+            <td>{{ libro.libro }}</td>
+            <td>{{ libro.anio }}</td>
+            <td><img [src]="libro.imagen" alt="{{ libro.libro }}" width="50" /></td>
+            <td>
+              <button (click)="deleteLibro(libro.id)" class="btn btn-danger">Eliminar</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  

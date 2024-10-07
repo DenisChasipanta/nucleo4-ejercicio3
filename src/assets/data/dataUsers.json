@@ -1,0 +1,25 @@
+{
+    "usuarios": [
+        {
+            "id": "2a60",
+            "username": "denis",
+            "password": "123"
+        }
+    ],
+    "libros": [
+        {
+            "id": "eb9e",
+            "autor": "Gabriel García Márquez",
+            "libro": "Cien Años de Soledad",
+            "anio": 2024,
+            "imagen": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.mrbooks.com%2F9789588886213%2Fcien-anos-de-soledad.html&psig=AOvVaw0C_OnERQZBX5aD9VC_NxxX&ust=1728362329567000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCNCumMe5-4gDFQAAAAAdAAAAABAR"
+        },
+        {
+            "id": "b13c",
+            "autor": "s",
+            "libro": "a",
+            "anio": 2000,
+            "imagen": ""
+        }
+    ]
+}

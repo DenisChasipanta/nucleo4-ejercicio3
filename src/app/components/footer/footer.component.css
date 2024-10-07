@@ -1,0 +1,15 @@
+footer {
+    background-color: #0056b3; /* Azul de la librería */
+    color: #fff; /* Texto blanco */
+    padding: 20px; /* Espaciado interno */
+    text-align: center; /* Centrar texto */
+    position: relative; /* Permitir posición de elementos */
+    bottom: 0; /* Posicionar en la parte inferior */
+    width: 100%; /* Ancho completo */
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+  }
+  
+  .footer-content p {
+    margin: 5px 0; /* Espaciado entre párrafos */
+    font-family: 'Arial', sans-serif; /* Fuente */
+  }

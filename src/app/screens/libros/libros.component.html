@@ -1,0 +1,16 @@
+<!-- src/app/screens/libros/libros.component.html -->
+<h2>Libros</h2>
+<table>
+    <tr>
+        <th>Autor</th>
+        <th>Libro</th>
+        <th>Año Publicación</th>
+        <th>Imagen</th>
+    </tr>
+    <tr *ngFor="let libro of libros">
+        <td>{{ libro.autor }}</td>
+        <td>{{ libro.libro }}</td>
+        <td>{{ libro.anio }}</td>
+        <td><img [src]="libro.imagen" alt="{{ libro.libro }}" /></td>
+    </tr>
+</table>

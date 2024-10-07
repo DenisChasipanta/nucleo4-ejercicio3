@@ -1,0 +1,26 @@
+.navbar {
+    background-color: #0056b3; /* Color de fondo */
+    padding: 15px; /* Espaciado interno */
+}
+
+.navbar-container {
+    display: flex; /* Disposición en fila */
+    justify-content: space-around; /* Espacio entre elementos */
+    align-items: center; /* Centrar verticalmente */
+}
+
+.navbar-link {
+    color: white; /* Color del texto */
+    text-decoration: none; /* Sin subrayado */
+    padding: 10px 20px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s; /* Transición suave al pasar el mouse */
+}
+
+.navbar-link:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Color de fondo al pasar el mouse */
+}
+
+.active {
+    background-color: #003b7a; /* Color de fondo para el enlace activo */
+}
